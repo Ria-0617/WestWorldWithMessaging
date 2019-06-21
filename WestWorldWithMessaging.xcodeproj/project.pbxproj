@@ -18,6 +18,7 @@
 		870FCBE222BD0DA900F43EB7 /* QuenchThirst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBD722BD0DA900F43EB7 /* QuenchThirst.cpp */; };
 		870FCBE322BD0DA900F43EB7 /* BaseGameEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBD922BD0DA900F43EB7 /* BaseGameEntity.cpp */; };
 		870FCBE522BD0E4E00F43EB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBE422BD0E4E00F43EB7 /* main.cpp */; };
+		870FCBEE22BD1E8100F43EB7 /* EntityManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBEC22BD1E8100F43EB7 /* EntityManager.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,10 @@
 		870FCBD822BD0DA900F43EB7 /* WifesGlobalState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WifesGlobalState.hpp; sourceTree = "<group>"; };
 		870FCBD922BD0DA900F43EB7 /* BaseGameEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseGameEntity.cpp; sourceTree = "<group>"; };
 		870FCBE422BD0E4E00F43EB7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		870FCBE722BD165900F43EB7 /* Telegram.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Telegram.hpp; sourceTree = "<group>"; };
+		870FCBEA22BD1B1100F43EB7 /* MessageTypes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MessageTypes.hpp; sourceTree = "<group>"; };
+		870FCBEC22BD1E8100F43EB7 /* EntityManager.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EntityManager.cpp; sourceTree = "<group>"; };
+		870FCBED22BD1E8100F43EB7 /* EntityManager.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EntityManager.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,9 +121,14 @@
 				870FCBD422BD0DA900F43EB7 /* DoHouseWork.hpp */,
 				870FCBD122BD0DA800F43EB7 /* VisitBathroom.cpp */,
 				870FCBCA22BD0DA800F43EB7 /* VisitBathroom.hpp */,
+				870FCBE722BD165900F43EB7 /* Telegram.hpp */,
+				870FCBEA22BD1B1100F43EB7 /* MessageTypes.hpp */,
+				870FCBEC22BD1E8100F43EB7 /* EntityManager.cpp */,
+				870FCBED22BD1E8100F43EB7 /* EntityManager.hpp */,
 			);
-			path = WestWorldWithMessaging;
-			sourceTree = "<group>";
+			name = WestWorldWithMessaging;
+			path = "/Users/tanaka/Desktop/Programming Game AI/Chapter2-State Machines/WestWorldWithMessaging/WestWorldWithMessaging";
+			sourceTree = "<absolute>";
 		};
 /* End PBXGroup section */
 
@@ -186,6 +196,7 @@
 				870FCBE122BD0DA900F43EB7 /* EnterMineAndDigForNugget.cpp in Sources */,
 				870FCBDA22BD0DA900F43EB7 /* DoHouseWork.cpp in Sources */,
 				870FCBDE22BD0DA900F43EB7 /* WifesGlobalState.cpp in Sources */,
+				870FCBEE22BD1E8100F43EB7 /* EntityManager.cpp in Sources */,
 				870FCBE022BD0DA900F43EB7 /* VisitBathroom.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
