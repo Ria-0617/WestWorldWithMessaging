@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		870FCBBC22BD0B2600F43EB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBBB22BD0B2600F43EB7 /* main.cpp */; };
+		870FCBDA22BD0DA900F43EB7 /* DoHouseWork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBC222BD0DA700F43EB7 /* DoHouseWork.cpp */; };
+		870FCBDB22BD0DA900F43EB7 /* MinersWife.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBC422BD0DA800F43EB7 /* MinersWife.cpp */; };
+		870FCBDC22BD0DA900F43EB7 /* GoHomeAndSleepTilRested.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBC522BD0DA800F43EB7 /* GoHomeAndSleepTilRested.cpp */; };
+		870FCBDD22BD0DA900F43EB7 /* VisitBankAndDepositGold.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBCC22BD0DA800F43EB7 /* VisitBankAndDepositGold.cpp */; };
+		870FCBDE22BD0DA900F43EB7 /* WifesGlobalState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBCD22BD0DA800F43EB7 /* WifesGlobalState.cpp */; };
+		870FCBDF22BD0DA900F43EB7 /* Miner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBCE22BD0DA800F43EB7 /* Miner.cpp */; };
+		870FCBE022BD0DA900F43EB7 /* VisitBathroom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBD122BD0DA800F43EB7 /* VisitBathroom.cpp */; };
+		870FCBE122BD0DA900F43EB7 /* EnterMineAndDigForNugget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBD322BD0DA900F43EB7 /* EnterMineAndDigForNugget.cpp */; };
+		870FCBE222BD0DA900F43EB7 /* QuenchThirst.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBD722BD0DA900F43EB7 /* QuenchThirst.cpp */; };
+		870FCBE322BD0DA900F43EB7 /* BaseGameEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBD922BD0DA900F43EB7 /* BaseGameEntity.cpp */; };
+		870FCBE522BD0E4E00F43EB7 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 870FCBE422BD0E4E00F43EB7 /* main.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +34,31 @@
 
 /* Begin PBXFileReference section */
 		870FCBB822BD0B2600F43EB7 /* WestWorldWithMessaging */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WestWorldWithMessaging; sourceTree = BUILT_PRODUCTS_DIR; };
-		870FCBBB22BD0B2600F43EB7 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		870FCBC222BD0DA700F43EB7 /* DoHouseWork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DoHouseWork.cpp; sourceTree = "<group>"; };
+		870FCBC322BD0DA700F43EB7 /* EntityNames.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EntityNames.hpp; sourceTree = "<group>"; };
+		870FCBC422BD0DA800F43EB7 /* MinersWife.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MinersWife.cpp; sourceTree = "<group>"; };
+		870FCBC522BD0DA800F43EB7 /* GoHomeAndSleepTilRested.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GoHomeAndSleepTilRested.cpp; sourceTree = "<group>"; };
+		870FCBC622BD0DA800F43EB7 /* QuenchThirst.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = QuenchThirst.hpp; sourceTree = "<group>"; };
+		870FCBC722BD0DA800F43EB7 /* State.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = State.hpp; sourceTree = "<group>"; };
+		870FCBC822BD0DA800F43EB7 /* VisitBankAndDepositGold.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VisitBankAndDepositGold.hpp; sourceTree = "<group>"; };
+		870FCBC922BD0DA800F43EB7 /* StateMachine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = StateMachine.hpp; sourceTree = "<group>"; };
+		870FCBCA22BD0DA800F43EB7 /* VisitBathroom.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VisitBathroom.hpp; sourceTree = "<group>"; };
+		870FCBCB22BD0DA800F43EB7 /* EnterMineAndDigForNugget.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnterMineAndDigForNugget.hpp; sourceTree = "<group>"; };
+		870FCBCC22BD0DA800F43EB7 /* VisitBankAndDepositGold.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisitBankAndDepositGold.cpp; sourceTree = "<group>"; };
+		870FCBCD22BD0DA800F43EB7 /* WifesGlobalState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WifesGlobalState.cpp; sourceTree = "<group>"; };
+		870FCBCE22BD0DA800F43EB7 /* Miner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Miner.cpp; sourceTree = "<group>"; };
+		870FCBCF22BD0DA800F43EB7 /* GoHomeAndSleepTilRested.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GoHomeAndSleepTilRested.hpp; sourceTree = "<group>"; };
+		870FCBD022BD0DA800F43EB7 /* Locations.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Locations.hpp; sourceTree = "<group>"; };
+		870FCBD122BD0DA800F43EB7 /* VisitBathroom.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VisitBathroom.cpp; sourceTree = "<group>"; };
+		870FCBD222BD0DA800F43EB7 /* MinersWife.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MinersWife.hpp; sourceTree = "<group>"; };
+		870FCBD322BD0DA900F43EB7 /* EnterMineAndDigForNugget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnterMineAndDigForNugget.cpp; sourceTree = "<group>"; };
+		870FCBD422BD0DA900F43EB7 /* DoHouseWork.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DoHouseWork.hpp; sourceTree = "<group>"; };
+		870FCBD522BD0DA900F43EB7 /* BaseGameEntity.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseGameEntity.hpp; sourceTree = "<group>"; };
+		870FCBD622BD0DA900F43EB7 /* Miner.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Miner.hpp; sourceTree = "<group>"; };
+		870FCBD722BD0DA900F43EB7 /* QuenchThirst.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuenchThirst.cpp; sourceTree = "<group>"; };
+		870FCBD822BD0DA900F43EB7 /* WifesGlobalState.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WifesGlobalState.hpp; sourceTree = "<group>"; };
+		870FCBD922BD0DA900F43EB7 /* BaseGameEntity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseGameEntity.cpp; sourceTree = "<group>"; };
+		870FCBE422BD0E4E00F43EB7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +91,31 @@
 		870FCBBA22BD0B2600F43EB7 /* WestWorldWithMessaging */ = {
 			isa = PBXGroup;
 			children = (
-				870FCBBB22BD0B2600F43EB7 /* main.cpp */,
+				870FCBE422BD0E4E00F43EB7 /* main.cpp */,
+				870FCBD922BD0DA900F43EB7 /* BaseGameEntity.cpp */,
+				870FCBD522BD0DA900F43EB7 /* BaseGameEntity.hpp */,
+				870FCBC322BD0DA700F43EB7 /* EntityNames.hpp */,
+				870FCBD022BD0DA800F43EB7 /* Locations.hpp */,
+				870FCBC722BD0DA800F43EB7 /* State.hpp */,
+				870FCBC922BD0DA800F43EB7 /* StateMachine.hpp */,
+				870FCBCE22BD0DA800F43EB7 /* Miner.cpp */,
+				870FCBD622BD0DA900F43EB7 /* Miner.hpp */,
+				870FCBD322BD0DA900F43EB7 /* EnterMineAndDigForNugget.cpp */,
+				870FCBCB22BD0DA800F43EB7 /* EnterMineAndDigForNugget.hpp */,
+				870FCBC522BD0DA800F43EB7 /* GoHomeAndSleepTilRested.cpp */,
+				870FCBCF22BD0DA800F43EB7 /* GoHomeAndSleepTilRested.hpp */,
+				870FCBD722BD0DA900F43EB7 /* QuenchThirst.cpp */,
+				870FCBC622BD0DA800F43EB7 /* QuenchThirst.hpp */,
+				870FCBCC22BD0DA800F43EB7 /* VisitBankAndDepositGold.cpp */,
+				870FCBC822BD0DA800F43EB7 /* VisitBankAndDepositGold.hpp */,
+				870FCBC422BD0DA800F43EB7 /* MinersWife.cpp */,
+				870FCBD222BD0DA800F43EB7 /* MinersWife.hpp */,
+				870FCBCD22BD0DA800F43EB7 /* WifesGlobalState.cpp */,
+				870FCBD822BD0DA900F43EB7 /* WifesGlobalState.hpp */,
+				870FCBC222BD0DA700F43EB7 /* DoHouseWork.cpp */,
+				870FCBD422BD0DA900F43EB7 /* DoHouseWork.hpp */,
+				870FCBD122BD0DA800F43EB7 /* VisitBathroom.cpp */,
+				870FCBCA22BD0DA800F43EB7 /* VisitBathroom.hpp */,
 			);
 			path = WestWorldWithMessaging;
 			sourceTree = "<group>";
@@ -118,7 +176,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870FCBBC22BD0B2600F43EB7 /* main.cpp in Sources */,
+				870FCBDD22BD0DA900F43EB7 /* VisitBankAndDepositGold.cpp in Sources */,
+				870FCBDB22BD0DA900F43EB7 /* MinersWife.cpp in Sources */,
+				870FCBDC22BD0DA900F43EB7 /* GoHomeAndSleepTilRested.cpp in Sources */,
+				870FCBE222BD0DA900F43EB7 /* QuenchThirst.cpp in Sources */,
+				870FCBE522BD0E4E00F43EB7 /* main.cpp in Sources */,
+				870FCBDF22BD0DA900F43EB7 /* Miner.cpp in Sources */,
+				870FCBE322BD0DA900F43EB7 /* BaseGameEntity.cpp in Sources */,
+				870FCBE122BD0DA900F43EB7 /* EnterMineAndDigForNugget.cpp in Sources */,
+				870FCBDA22BD0DA900F43EB7 /* DoHouseWork.cpp in Sources */,
+				870FCBDE22BD0DA900F43EB7 /* WifesGlobalState.cpp in Sources */,
+				870FCBE022BD0DA900F43EB7 /* VisitBathroom.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
