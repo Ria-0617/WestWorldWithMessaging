@@ -9,7 +9,8 @@
 #include "MinersWife.hpp"
 
 MinersWife::MinersWife(int id):BaseGameEntity(id),
-                             m_Location(shack)
+                               m_Location(shack),
+                               m_bCooking(false)
 {
     m_pStateMachine = new StateMachine<MinersWife>(this);
     
@@ -25,4 +26,9 @@ MinersWife::~MinersWife(){
 void MinersWife::Update()
 {
     m_pStateMachine->Update();
+}
+
+
+bool MinersWife::HandleMessage(const Telegram& msg){
+    return m_pStateMachine->HandleMessage(msg);
 }

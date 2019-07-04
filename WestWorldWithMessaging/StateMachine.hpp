@@ -14,6 +14,7 @@
 #include <string>
 
 #include "State.hpp"
+#include "Telegram.hpp"
 
 template <class entity_type>
 class StateMachine {
@@ -52,6 +53,21 @@ public:
         if(m_pCurrentState) m_pCurrentState->Execute(m_pOwner);
     }
     
+    bool HandleMessage(const Telegram& msg)const{
+        // 最初に現在のステートが有効で、メッセージを処理できるかどうかをそ調べる
+        if(m_pCurrentState && m_pCurrentState->OnMessage(m_pOwner, msg)){
+            return true;
+        }
+        
+        // 有効でないとき、グローバルステートが実装されているなら
+        // グローバルステートへメッセージを送信する
+        if(m_pGlobalState && m_pGlobalState->OnMessage(m_pOwner, msg)){
+            return true;
+        }
+        
+        return  false;
+    }
+    
     // 新しいステートに変更
     void ChangeState(State<entity_type>* pNewState){
         assert(pNewState && "<StateMachine::ChangeState>: trying to change to NULL state");
@@ -73,15 +89,16 @@ public:
         ChangeState(m_pPreviousState);
     }
     
+    // 現在のステートの型とパラメータで渡されたクラスの型が同じならtureを返す
+    bool isInState(const State<entity_type>& st)const{
+        return typeid(*m_pCurrentState) == typeid(st);
+    }
+    
     // アクセサ
     State<entity_type>* CurrentState()const{return m_pCurrentState;}
     State<entity_type>* PreviousState()const{return m_pPreviousState;}
     State<entity_type>* GlobalState()const{return m_pGlobalState;}
     
-    // 現在のステートの型とパラメータで渡されたクラスの型が同じならtureを返す
-    bool isInState(const State<entity_type>& st)const{
-        return typeid(*m_pCurrentState) == typeid(st);
-    }
 };
 
 #endif /* StateMachine_hpp */

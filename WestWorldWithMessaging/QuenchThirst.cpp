@@ -42,3 +42,7 @@ void QuenchThirst::Exit(Miner* pMiner)
 {
     cout << GetNameOfEntity(pMiner->ID()) << ": " << "Leaving the saloon, feelin' good" << endl;
 }
+
+bool QuenchThirst::OnMessage(Miner *pMiner, const Telegram &msg){
+    return false;
+}

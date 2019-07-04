@@ -15,8 +15,11 @@
 #include "Miner.hpp"
 #include "Locations.hpp"
 #include "EntityNames.hpp"
+#include "Telegram.hpp"
+#include "MessageDispatcher.hpp"
 
 #include "EnterMineAndDigForNugget.hpp"
+#include "EatStew.hpp"
 
 class Miner;
 
@@ -39,6 +42,8 @@ public:
     virtual void Enter(Miner* miner);
     virtual void Execute(Miner* miner);
     virtual void Exit(Miner* miner);
+    
+    virtual bool OnMessage(Miner* pMiner, const Telegram& msg);
 };
 
 #endif /* GoHomeAndSleepTilRested_hpp */

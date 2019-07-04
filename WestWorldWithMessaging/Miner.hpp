@@ -15,6 +15,7 @@
 #include "Locations.hpp"
 #include "State.hpp"
 #include "StateMachine.hpp"
+#include "Telegram.hpp"
 
 #include "GoHomeAndSleepTilRested.hpp"
 
@@ -54,6 +55,8 @@ public:
     ~Miner();
     
     void Update();
+    
+    virtual bool HandleMessage(const Telegram& msg);
     
     location_type Location()const{return m_Location;}
     void          ChangeLocation(const location_type loc){m_Location=loc;}

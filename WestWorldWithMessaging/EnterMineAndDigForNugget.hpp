@@ -15,6 +15,7 @@
 #include "Miner.hpp"
 #include "Locations.hpp"
 #include "EntityNames.hpp"
+#include "Telegram.hpp"
 
 #include "VisitBankAndDepositGold.hpp"
 #include "QuenchThirst.hpp"
@@ -32,13 +33,14 @@ private:
     EnterMineAndDigForNugget& operator=(const EnterMineAndDigForNugget&);
     
 public:
-    
     // これがシングルトン
     static EnterMineAndDigForNugget* Instance();
     
     virtual void Enter(Miner* pMiner);
     virtual void Execute(Miner* pMiner);
     virtual void Exit(Miner* pMiner);
+    
+    virtual bool OnMessage(Miner* pMiner, const Telegram& msg);
 };
 
 #endif /* EnterMineAndDigForNugget_hpp */

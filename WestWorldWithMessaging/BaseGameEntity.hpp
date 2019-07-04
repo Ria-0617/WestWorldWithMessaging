@@ -11,6 +11,8 @@
 
 #include <iostream>
 
+#include "Telegram.hpp"
+
 class BaseGameEntity{
 private:
     // どのエンティティも一意のIDを持つ
@@ -34,6 +36,9 @@ public:
     virtual void Update() = 0;
     
     int ID()const { return m_ID; }
+    
+    // 全てのサブクラスはメッセージを使って通信する
+    virtual bool HandleMessage(const Telegram& msg)=0;
 };
 
 #endif /* BaseGameEntity_hpp */

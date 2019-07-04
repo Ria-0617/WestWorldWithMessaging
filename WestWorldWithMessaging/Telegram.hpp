@@ -10,6 +10,7 @@
 #define Telegram_hpp
 
 #include <iostream>
+#include <math.h>
 
 struct Telegram{
     // このTelegramを送ったエンティティ
@@ -50,9 +51,9 @@ const double SmallestDelay = 0.25;
 
 inline bool operator==(const Telegram& t1, const Telegram& t2)
 {
-    return ( fabs(t1.DispatchTime-t2.DispatchTime) < SmallestDelay) &&
-    (t1.Sender == t2.Sender)        &&
-    (t1.Receiver == t2.Receiver)    &&
+    return ( fabs(t1.dispatchTime-t2.dispatchTime) < SmallestDelay) &&
+    (t1.sender == t2.sender)        &&
+    (t1.receiver == t2.receiver)    &&
     (t1.Msg == t2.Msg);
 }
 
@@ -65,14 +66,14 @@ inline bool operator<(const Telegram& t1, const Telegram& t2)
     
     else
     {
-        return  (t1.DispatchTime < t2.DispatchTime);
+        return  (t1.dispatchTime < t2.dispatchTime);
     }
 }
 
 inline std::ostream& operator<<(std::ostream& os, const Telegram& t)
 {
-    os << "time: " << t.DispatchTime << "  Sender: " << t.Sender
-    << "   Receiver: " << t.Receiver << "   Msg: " << t.Msg;
+    os << "time: " << t.dispatchTime << "  Sender: " << t.sender
+    << "   Receiver: " << t.receiver << "   Msg: " << t.Msg;
     
     return os;
 }

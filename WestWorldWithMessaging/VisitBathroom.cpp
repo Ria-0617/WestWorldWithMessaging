@@ -34,3 +34,7 @@ void VisitBathroom::Exit(MinersWife* wife)
 {
     cout << GetNameOfEntity(wife->ID()) << ": Leavin' the Jon" <<endl;
 }
+
+bool VisitBathroom::OnMessage(MinersWife *wife, const Telegram &msg){
+    return false;
+}

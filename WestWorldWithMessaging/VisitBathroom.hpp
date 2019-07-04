@@ -14,6 +14,7 @@
 #include "EntityNames.hpp"
 #include "State.hpp"
 #include "MinersWife.hpp"
+#include "Telegram.hpp"
 
 class MinersWife;
 
@@ -30,6 +31,8 @@ public:
     virtual void Enter(MinersWife* wife);
     virtual void Execute(MinersWife* wife);
     virtual void Exit(MinersWife* wife);
+    
+    virtual bool OnMessage(MinersWife* wife, const Telegram& msg);
 };
 
 #endif /* VisitBathroom_hpp */

@@ -15,6 +15,7 @@
 #include "Miner.hpp"
 #include "Locations.hpp"
 #include "EntityNames.hpp"
+#include "Telegram.hpp"
 
 #include "EnterMineAndDigForNugget.hpp"
 #include "GoHomeAndSleepTilRested.hpp"
@@ -37,6 +38,8 @@ public:
     virtual void Enter(Miner* miner);
     virtual void Execute(Miner* miner);
     virtual void Exit(Miner* miner);
+    
+    virtual bool OnMessage(Miner* pMiner, const Telegram& msg);
 };
 
 #endif /* VisitBankAndDepositGold_hpp */

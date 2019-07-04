@@ -30,6 +30,10 @@ void Miner::Update(){
     m_pStateMachine->Update();
 }
 
+bool Miner::HandleMessage(const Telegram &msg){
+    return m_pStateMachine->HandleMessage(msg);
+}
+
 //-----------------------------------------------------------------------------
 void Miner::AddToGoldCarried(const int val) {
     m_iGoldCarried += val;

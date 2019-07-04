@@ -50,3 +50,7 @@ void EnterMineAndDigForNugget::Execute(Miner* pMiner){
 void EnterMineAndDigForNugget::Exit(Miner *pMiner){
     cout << GetNameOfEntity(pMiner->ID()) << ": " << "Ah'm leavin' the gold mine with mah pokets full o' sweet gold" << endl;
 }
+
+bool EnterMineAndDigForNugget::OnMessage(Miner *pMiner, const Telegram &msg){
+    return false;
+}

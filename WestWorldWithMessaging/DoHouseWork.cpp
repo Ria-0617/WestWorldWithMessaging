@@ -42,6 +42,10 @@ void DoHouseWork::Exit(MinersWife* wife){
     
 }
 
+bool DoHouseWork::OnMessage(MinersWife *wife, const Telegram &msg){
+    return false;
+}
+
 int DoHouseWork::RandInt(int min, int max){
     random_device seed_gen;
     default_random_engine engine(seed_gen());

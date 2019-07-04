@@ -21,13 +21,27 @@ void WifesGlobalState::Enter(MinersWife *wife){
 }
 
 void WifesGlobalState::Execute(MinersWife *wife){
-    if(RandFloat(0.0f,1.0f)<0.1f){
+    if(RandFloat(0.0f,1.0f) < 0.1f &&
+       !wife->GetFSM()->isInState(*VisitBathroom::Instance())){
         wife->GetFSM()->ChangeState(VisitBathroom::Instance());
     }
 }
 
 void WifesGlobalState::Exit(MinersWife *wife){
     
+}
+
+bool WifesGlobalState::OnMessage(MinersWife* wife, const Telegram &msg){
+    switch (msg.Msg) {
+        case Msg_HiHoneyImHome:
+            cout << "Message handled by" << GetNameOfEntity(wife->ID()) << " at time:" << Clock->GetCurrentTime() << endl;
+            cout << GetNameOfEntity(wife->ID()) << ": Hi honey. Let me take you some of mah fine country stew" << endl;
+            wife->GetFSM()->ChangeState(CookStew::Instance());
+            return true;
+            
+            break;
+    }
+    return false;
 }
 
 float WifesGlobalState::RandFloat(float min, float max){

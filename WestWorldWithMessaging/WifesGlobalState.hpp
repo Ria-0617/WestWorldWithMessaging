@@ -13,8 +13,13 @@
 #include <random>
 
 #include "State.hpp"
+#include "Telegram.hpp"
+#include "MessageTypes.hpp"
+#include "CrudeTimer.h"
 #include "MinersWife.hpp"
+
 #include "VisitBathroom.hpp"
+#include "CookStew.hpp"
 
 class MinersWife;
 class VisitBathroom;
@@ -32,6 +37,8 @@ public:
     virtual void Enter(MinersWife* wife);
     virtual void Execute(MinersWife* wife);
     virtual void Exit(MinersWife* wife);
+    
+    virtual bool OnMessage(MinersWife* wife, const Telegram& msg);
     
     float RandFloat(float min, float max);
 };

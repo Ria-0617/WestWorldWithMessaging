@@ -14,6 +14,8 @@
 
 #include "BaseGameEntity.hpp"
 
+#define EntityMgr EntityManager::Instance()
+
 class EntityManager{
 private:
     // 入力を楽にするため
